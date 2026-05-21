@@ -9,7 +9,7 @@ body {
     padding: 0;
     background-color: rgb(177, 14, 14);
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: "Nunito", "poppins", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -33,10 +33,6 @@ img {
     cursor: pointer;
 }
 
-.square {
-    border-radius: 0;
-}
-
 ul {
     list-style: none;
     padding: 0;
@@ -45,7 +41,7 @@ ul {
 
 a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -151,4 +147,62 @@ footer {
     margin: 0 auto;
     padding: 0.5rem;
     border-radius: 2rem;
+}
+
+/* JavaScript file. Toggles profile picture from circular to square. */
+
+.square {
+    border-radius: 0.5rem;
+}
+
+/* Responsive styles. */
+
+@media only screen and (max-width: 768px) {
+
+    #about-me-section {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #about-me {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #about-me-photo {
+        max-width: 60%;
+        min-width: 10rem;
+        margin-top: 1rem;
+    }
+
+    #projects-section,
+    #technologies-section,
+    footer {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    #about-me-photo {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
 }
