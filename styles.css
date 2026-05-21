@@ -1,3 +1,5 @@
+/* Global styles. */
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: rgb(177, 14, 14);
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -26,6 +28,7 @@ img {
     max-width: 100%;
     height: auto;
     width: auto;
+    border-radius: 50%;
 }
 
 ul {
@@ -34,19 +37,34 @@ ul {
     margin: 0;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
 /* About me section styles. */
 
 #about-me-section {
+    background-color: black;
+    color: white;
     display: flex;
     max-width: 100%;
-    width: 800px;
-    margin: 0 auto;
+    width: 75%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    align-items: center;
+    border-radius: 2rem;
 }
 
 #about-me {
     display: block;
-    padding: 10px;
-    max-width: 400px;
+    padding: 0.5rem;
+    max-width: 50%;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -55,7 +73,8 @@ ul {
 
 #about-me-photo {
     display: block;
-    max-width: 400px;
+    max-width: 30%;
+    min-width: 15rem;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -68,44 +87,62 @@ ul {
 /* Projects section styles. */
 
 #projects-section {
+    background-color: black;
+    color: white;
     display: block;
     max-width: 100%;
-    width: 800px;
-    margin: 0 auto;
+    width: 75%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    border-radius: 2rem;
 }
 
 /* Technologies section styles. */
 
 #technologies-section {
+    background-color: black;
+    color: white;
     display: block;
     max-width: 100%;
-    width: 800px;
+    width: 75%;
     margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 2rem;
 }
 
 /* Footer styles. */
 
 footer {
+    background-color: black;
+    color: white;
     display: block;
-    max-width: 400px;
-    width: 100%;
+    max-width: 100%;
+    width: 75%;
     height: auto;
-    margin: 0 auto;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    border-radius: 2rem;
 }
 
 /* Contact page styles. */
 
 #photo-container {
     display: block;
-    max-width: 400px;
-    width: 100%;
+    max-width: 75%;
+    min-width: 15rem;
+    width: 50%;
     height: auto;
     margin: 0 auto;
+    margin: 1rem auto;
 }
 
 #contact-details {
+    background-color: black;
+    color: white;
     display: block;
     max-width: 100%;
-    width: 800px;
+    width: 75%;
     margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 2rem;
 }
